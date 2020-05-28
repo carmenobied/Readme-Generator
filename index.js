@@ -41,6 +41,8 @@ function writeToFile(fileName, data) {
 function init() {
 }
 // create badge via http://shields.io/
+
+// call generateMarkdown
 generateMarkdown();
 
 // retrieve user's Github information via the Github API
