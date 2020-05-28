@@ -1,6 +1,6 @@
 # Node.js and ES6+: Good README Generator
 
-The goal was to create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:
+The goal was to create a command-line application that dynamically generates a README.md from a user's input. The application is invoked with the following command:
 ```
 node index.js
 ```
@@ -43,7 +43,7 @@ Key Components Used:
 node.js - ES6+
 ```
 
-## Key Checks Included ensuring the following:
+## Key Checks included ensuring the following:
 1. Ensuring a functional, deployed application.
 2. GitHub repository with a unique name and a README describing project.
 3. The generated README includes 1 badge that's specific to the repository.
