@@ -1,13 +1,14 @@
-// require constants 
+// require constants for writing to the filesystem and gathering user input 
 const fs = require('fs');
 const inquirer = require("inquirer");
 const axios = require("axios");
 // import generateMarkdown file
-const generateMarkdown = require("./utils/generateMarkdown.js");
+const generator = require("./utils/generateMarkdown.js");
+const util = require("util"); 
+// promisify to convert function into async function and return a promise
 const writeFileAsync = util.promisify(fs.writeFile);
-let userName;
 
-// questions array
+// questions array for question prompts: Github Username - Project title - Description - Table of Contents - Installation - Usage - License - Contributing - Tests
 const questions = [
     { 
         type: "input",
@@ -49,44 +50,52 @@ const questions = [
         message: "What commands are required to run tests?",
         name: "Tests"
     },
-];
+]
 
-// Questions:
-// * Github Username 
-// * Project title
-// * Description
-// * Table of Contents
-// * Installation
-// * Usage
-// * License
-// * Contributing
-// * Tests
+// question prompts function to display questions
+function questionPrompts(incoming) {
+    return inquirer.prompt(incoming);
+};
+
+// asynchronous init
+async function init() {
+    console.log(generator.welcome);
+    try {
+        const data = await questionPrompts(questions);
+
+        module.exports = data
+        
+        const readme = generator.generateMarkdown(data);
+
+        await writeFileAsync("README.md", readme);
+
+        console.log("Successfully generated a Good README.md");
+    } catch (err) {
+        console.log(err);
+    }
+}
 
 // writeToFile function with file-extend (fs) module function to create a README
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function(err) {
         if (err) {
           console.log(err)
-        }else {
+        } else {
           console.log("Success!")
         }
       });
 }
 
-// init function to display questions
-function init() {
-    return inquirer.prompt([])
-}
-// create badge via http://shields.io/
-const badge = `![GitHub repo size](https://img.shields.io/github/repo-size/${Username}/${Title}?logo=github)`
 
-// call generateMarkdown
-generateMarkdown();
+// create badge via http://shields.io/
+
+// call markdown generator
+const goodReadme = generator({ ...questions});
 
 // retrieve user's Github information via the Github API
 
 // call writeToFile() function
-writeToFile();
+writeToFile(goodReadme);
 
 // call init() function
 init();

@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "The goal was to create a command-line application that dynamically generates a README.md from a user's input. The application is invoked with the following command: ``` node index.js ``` The user is prompted for their GitHub username and other information pertaining to the project the README is for.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,14 @@
     "dotenv": "^8.0.0",
     "file-system": "^2.2.2",
     "inquirer": "^6.5.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carmenobied/week9-homework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carmenobied/week9-homework/issues"
+  },
+  "homepage": "https://github.com/carmenobied/week9-homework#readme"
 }

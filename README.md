@@ -34,13 +34,24 @@ SO THAT I can easily put together a good README for a new project
 i. Fork the Github repository.
 ii. Clone the forked repo into your local machine using gitbash/terminal to pull the project and data.
 iii. Access the code files and assets via Visual Studio or in your browser to view the code and website respectively.  
-iv. Open Github and use the Good README.md Generator for a repo.
+iv. Run npm init 
+v. Install inquirer with command line npm install inquirer 
+vi. Install axios with command line npm install axios
+vii. In the terminal, cd into the repo that contains the index.js file. 
+viii. Enter node index.js in your terminal and answer the question prompts. 
+ix. Muster enter username for the app to function correctly.
+x. Open Github and use the Good README.md Generator for a repo.
 ```
 
 ## Usage
 Key Components Used:
 ```bash
-node.js - ES6+
+node.js - ES6+ - NPM - inquirer - axios 
+```
+
+## License 
+```
+N/A
 ```
 
 ## Key Checks included ensuring the following:
@@ -48,7 +59,4 @@ node.js - ES6+
 2. GitHub repository with a unique name and a README describing project.
 3. The generated README includes 1 badge that's specific to the repository.
 4. The generated README includes the following sections: 
-```bash
-Title - Description - Table of Contents - Installation - Usage - License - Contributing - Tests - Questions
-```
 5. GIVEN the developer has a GitHub profile and a repository, WHEN prompted for the developer's GitHub username and repo specific information, THEN a README for the repo is generated
