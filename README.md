@@ -9,15 +9,15 @@
 
   # Table of Contents
 
-    * [Installation](#Installation)
-    * [Usage](#Usage)
-    * [License](#License)
-    * [Contributing](#Contributing)
-    * [Tests](#Tests)
-    * [Questions](#Questions)
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
   
   ## Installation
-  > i. For k the Github repository. ii. Clone the forked repo into your local machine usin g gitbash/terminal to pull the project and data. iii. Access the code files and a ssets via Visual Studio or in your browser to view the code and website respe c ti vely. iv. Run npm init v. Install inquirer with command line npm install i n qu ire r vi. Install axios with command line npm install axios vii. In the te r mi nal , cd into the repo that contains the index.js file. viii. Enter node i n de x.j s in you r terminal and answer the question prompts. ix. Muster enter u se rna me f or t he ap p to function correctly. x. Open Github and use the Goo d REA DME. md Ge nerat or for a repo.
+  > i. Fork the Github repository. ii. Clone the forked repo into your local machine using gitbash/terminal to pull the project and data. iii. Access the code files and assets via Visual Studio or in your browser to view the code and website respectively. iv. Run npm init v. Install inquirer with command line npm install i nquirer vi. Install axios with command line npm install axios vii. In the te r mi nal , cd into the repo that contains the index.js file. viii. Enter node i n de x.j s in you r terminal and answer the question prompts. ix. Muster enter username for the app to function correctly. x. Open Github and use the Good README.md. Generator for a repo.
 
   ## Usage
   > Key Components Used: node.js - ES6+ - NPM - inquirer - axios.
@@ -31,9 +31,7 @@
   ## Tests
   No tests available.
 
-  ## Questions
-  carmen.obied@gmail.com
-  
+  ## Questions  
  Have questions? Contact me at:
  ##### Email address: carmen.obied@gmail.com
  ##### Github username:  
