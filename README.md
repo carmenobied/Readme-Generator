@@ -1,6 +1,6 @@
 
 
- #  Node.js and ES6+: Good README Generator
+ # Node.js and ES6+: Good README Generator
  
 ![Project license badge](https://img.shields.io/badge/license-MIT-brightgreen)      
 
@@ -17,7 +17,7 @@
   * [Questions](#Questions)
   
   ## Installation
-  > 1. npm init / 2. npm install inqui
+  > 1. npm init / 2. npm install inquirer / 3. node index.js
 
   ## Usage
   > Key Components Used: node.js - ES6+ - NPM - inquirer
@@ -26,7 +26,7 @@
   MIT license. 
 
   ## Contributing
-  N/A
+  N/A.
 
   ## Tests
   No tests available.
