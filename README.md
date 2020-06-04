@@ -17,7 +17,15 @@
   * [Questions](#Questions)
   
   ## Installation
-  > i. Fork the Github repository. ii. Clone the forked repo into your local machine usin g gitbash/terminal to pull the project and data. \n iii. Access the code files and assets via Visual Studio or in your browser to view the code and website respectively. \n iv. Run npm init. \n v. Install inquirer with command line npm install inquirer. \n vi. Install axios with command line npm install axios. \n vii. In the terminal , cd into the repo that contains the index.js file. \n viii. Enter node index.j s in your terminal and answer the question prompts. \n ix. Muster enter username for the app to function correctly. \n x. Open Github and use the Good README.md Generator for a repo.
+  > i. Fork the Github repository. 
+  ii. Clone the forked repo into your local machine usin g gitbash/terminal to pull the project and data. 
+  iii. Access the code files and assets via Visual Studio or in your browser to view the code and website respectively. 
+  iv. Run npm init. 
+  v. Install inquirer with command line npm install inquirer. 
+  vi. Install axios with command line npm install axios. 
+  vii. In the terminal , cd into the repo that contains the index.js file. viii. Enter node index.j s in your terminal and answer the question prompts. 
+  ix. Open Github and use the Good README.md Generator for a repo.
+  x. Answer the question prompts to generate the README.md. 
 
   ## Usage
   > Key Components Used: node.js - ES6+ - NPM - inquirer - axios.
