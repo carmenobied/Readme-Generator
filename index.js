@@ -38,13 +38,13 @@ function questionPrompts() {
         {
             type: "checkbox",
             name: "License",
-            message:     "Please enter the License name if aplicable, otherwise enter N/A.",
+            message: "Please enter the License name if aplicable, otherwise enter N/A.",
             choices: ["MIT", "Apache","GPL", "N/A", "Other"]
         },
         {
             type: "input",
             name: "Contribution",
-            message:     "Please include Github usernames of project contributors, if applicable?"
+            message: "Please include Github usernames of project contributors, if applicable?"
         },
         {
             type: "input",
@@ -55,7 +55,7 @@ function questionPrompts() {
         {
             type: "input",
             name: "Email",
-            message: "What is your emails?"
+            message: "What is your email?"
         }
         
     ])
