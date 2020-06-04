@@ -42,7 +42,4 @@ function generateMarkdown(data) {
   `;
   }
   
-  module.exports = 
-  {
-    generateMarkdown: generateMarkdown
-  }
+  module.exports = { generateMarkdown: generateMarkdown }
