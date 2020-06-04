@@ -86,12 +86,12 @@ function init() {
 
 // create badge via http://shields.io/ // for badge link open ./utils/generateMarkdown.js
 
-// function to write README file
+// writeToFile function to generate a README
 function writeToFile(fileName, data) {
     const goodREADME= generateMarkdown.generateMarkdown(data);
 
     writeFileAsync(fileName, goodREADME);
 }
 
-// function call to initialize program
+// call init() function to initialize the app
 init();
