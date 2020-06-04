@@ -1,50 +1,46 @@
-// function to generate markdown for README
+// generate markdown function to construct the README file
+// create badge via http://shields.io/
+
 function generateMarkdown(data) {
     return `
-  # ${data.title}
 
-  ![License Badge](https://img.shields.io/badge/license-${data.license[0]}-blue)
+    # ${data.Title}
+
+  ![Project license badge](https://img.shields.io/badge/license-${data.License}-brightgreen)      
 
   ## Description
-
-  ${data.description}
+  ${data.Description}
 
   ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+    * [Installation](#Installation)
+    * [Usage](#Usage)
+    * [License](#License)
+    * [Contributing](#Contributing)
+    * [Tests](#Tests)
+    * [Questions](#Questions)
     * 
   ## Installation
-
-
-  ${data.install}
+  ${data.Installation}
 
   ## Usage
-
-  ${data.usage}
+  ${data.Usage}
 
   ## License
-
-  This project is covered under the ${data.license[0]} license. For more information go to [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
+  This project is covered under the ${data.License[0]} license. Find out more: [https://choosealicense.com/licenses/](https://choosealicense.com/licenses/)
 
   ## Contributing
-
-  ${data.contribution}
+  ${data.Contribution}
 
   ## Tests
-  
-  ${data.tests}
+  ${data.Tests}
 
   ## Questions
-
-  [${data.username}](https://github.com/${data.username})
-
-  ${data.email}
+  ${data.Email}
   
-  If you have any questions about the project you can reach me at the above email.
+ Have questions? Contact me at:
+ ##### Email address: ${data.Email}
+ ##### Github username: ${data.Username} 
+
   `;
   }
   
