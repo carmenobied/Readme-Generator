@@ -13,51 +13,94 @@ function questionPrompts() {
         {
             type: "input",
             name: "Username",
-            message: "What is your GitHub username?"
+            message: "What is your GitHub username?",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must enter your Github username for your application."
+                } return true;
+            }
         },
         {
             type: "input",
             name: "Title",
-            message: "What is your Project Title?"
+            message: "What is your Project Title?",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must enter a project title for your application."
+                } return true;
+            }
         },
         {
             type: "input",
             name: "Description",
-            message: "Please include a short project description."
+            message: "Please include a short project description.",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must enter a project description for your application."
+                } return true;
+            }
         },
         {
             type: "input",
             name: "Installation",
-            message: "What commands are required to install the project and its dependencies?"
+            message: "What commands are required to install the project and its dependencies?",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must describe how to install your project application."
+                } return true;
+            }
         },
         {
             type: "input",
             name: "Usage",
-            message: "Please provide repo usage instructions."
+            message: "Please provide repo usage instructions.",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must describe your application usage."
+                } return true;
+            }
         },
         {
             type: "checkbox",
             name: "License",
             message: "Please enter the License name if aplicable, otherwise enter N/A.",
-            choices: ["MIT", "Apache","GPL", "N/A", "Other"]
+            choices: ["MIT", "Apache","GPL", "N/A", "Other"],
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must select one license option by pressing space."
+                } return true;
+            }
         },
         {
             type: "input",
             name: "Contribution",
-            message: "Please include Github usernames of project contributors, if applicable?"
+            message: "Please include Github usernames of project contributors, if applicable?",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "Please indicate if and how you would like others to contribute to your project."
+                } return true;
+            }
         },
         {
             type: "input",
             name: "Tests",
-            message: "What commands are required to run tests?"
+            message: "What commands are required to run tests?",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "Please indicate if and how others can run tests for your project."
+                } return true;
+            }
         },
-    
         {
             type: "input",
             name: "Email",
-            message: "What is your email?"
+            message: "What is your email?",
+            validate: answer => {
+                if (answer.length < 1) {
+                    return "You must enter your email address."
+                } return true;
+            }
         }
-        
     ])
 }
 
