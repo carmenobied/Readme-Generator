@@ -5,7 +5,7 @@
 ![Project license badge](https://img.shields.io/badge/license-MIT-brightgreen)      
 
   # Description
-  The goal was to create a command-line application that dynamically generates a README.md from a user's input. The application is invoked with the node index.js command. The user is prompted for their GitHub username and other information pertaining to the project the README is for.
+  The goal was to create a command-line application that dynamically generates a README.md from a user's input. The application is invoked with the node index.js command. The user is prompted for their GitHub username and other information pertaining to t
 
   # Table of Contents
 
