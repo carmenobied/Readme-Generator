@@ -24,11 +24,11 @@
 
 * Below is screenshot of the application:
 
-![Good Readme Generator Screenshot](Short_Demo_GoodReadmeGenerator.gif)
+![Good Readme Generator Screenshot](/assets/Short_Demo_GoodReadmeGenerator.gif)
 
 * Preview demo demostrating the app functionality:
 
-![Good Readme Generator Screenshot](Screenshot_GoodReadmeGenerator.png)
+![Good Readme Generator Screenshot](/assets/Screenshot_GoodReadmeGenerator.png)
 
 See full video demostrating app functionality and tests in Assets/Full_Demo_GoodReadmeGenerator.mp4
 
